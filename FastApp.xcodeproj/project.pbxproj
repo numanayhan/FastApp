@@ -1,0 +1,796 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C8878649CB95185FCDC9A6F /* Pods_FastAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47BE93C071F744A78C4B52E /* Pods_FastAppTests.framework */; };
+		50FD4C6AC817925C2DB3D8A0 /* Pods_FastApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A758E5CC4ED84EAB2BE89998 /* Pods_FastApp.framework */; };
+		96ABE4B5523AEEDCD301D0BE /* Pods_FastApp_FastAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C7F3BC96BEDE3A2D3ECD9C4 /* Pods_FastApp_FastAppUITests.framework */; };
+		F0140AC12803473C001276E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0140AC02803473C001276E7 /* AppDelegate.swift */; };
+		F0140ACB2803473C001276E7 /* FastApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F0140AC92803473C001276E7 /* FastApp.xcdatamodeld */; };
+		F0140ACD28034740001276E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0140ACC28034740001276E7 /* Assets.xcassets */; };
+		F0140AD028034740001276E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0140ACE28034740001276E7 /* LaunchScreen.storyboard */; };
+		F0140ADB28034741001276E7 /* FastAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0140ADA28034741001276E7 /* FastAppTests.swift */; };
+		F0140AE528034741001276E7 /* FastAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0140AE428034741001276E7 /* FastAppUITests.swift */; };
+		F0140AE728034741001276E7 /* FastAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0140AE628034741001276E7 /* FastAppUITestsLaunchTests.swift */; };
+		F0140AF6280347BB001276E7 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0140AF5280347BB001276E7 /* Navigation.swift */; };
+		F0140AF92803562D001276E7 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0140AF82803562D001276E7 /* Launch.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F0140AD728034741001276E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0140AB52803473C001276E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0140ABC2803473C001276E7;
+			remoteInfo = FastApp;
+		};
+		F0140AE128034741001276E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0140AB52803473C001276E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0140ABC2803473C001276E7;
+			remoteInfo = FastApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A6707F51581CCC58439E89E /* Pods-FastAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastAppTests.release.xcconfig"; path = "Target Support Files/Pods-FastAppTests/Pods-FastAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		0C7F3BC96BEDE3A2D3ECD9C4 /* Pods_FastApp_FastAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FastApp_FastAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3423464EC9F97BBCAE8F0ED4 /* Pods-FastApp-FastAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastApp-FastAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-FastApp-FastAppUITests/Pods-FastApp-FastAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		53D7E14865A9C976F3569581 /* Pods-FastApp-FastAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastApp-FastAppUITests.release.xcconfig"; path = "Target Support Files/Pods-FastApp-FastAppUITests/Pods-FastApp-FastAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A758E5CC4ED84EAB2BE89998 /* Pods_FastApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FastApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2BB34FF02BEF74088561B22 /* Pods-FastAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastAppTests.debug.xcconfig"; path = "Target Support Files/Pods-FastAppTests/Pods-FastAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C7FE9041D807E29E06E57BA8 /* Pods-FastApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastApp.release.xcconfig"; path = "Target Support Files/Pods-FastApp/Pods-FastApp.release.xcconfig"; sourceTree = "<group>"; };
+		D02625811523804797F4AEB0 /* Pods-FastApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastApp.debug.xcconfig"; path = "Target Support Files/Pods-FastApp/Pods-FastApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F0140ABD2803473C001276E7 /* FastApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0140AC02803473C001276E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F0140ACA2803473C001276E7 /* FastApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FastApp.xcdatamodel; sourceTree = "<group>"; };
+		F0140ACC28034740001276E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0140ACF28034740001276E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F0140AD128034740001276E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0140AD628034741001276E7 /* FastAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0140ADA28034741001276E7 /* FastAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastAppTests.swift; sourceTree = "<group>"; };
+		F0140AE028034741001276E7 /* FastAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0140AE428034741001276E7 /* FastAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastAppUITests.swift; sourceTree = "<group>"; };
+		F0140AE628034741001276E7 /* FastAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F0140AF5280347BB001276E7 /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		F0140AF82803562D001276E7 /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
+		F47BE93C071F744A78C4B52E /* Pods_FastAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FastAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0140ABA2803473C001276E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50FD4C6AC817925C2DB3D8A0 /* Pods_FastApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0140AD328034741001276E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C8878649CB95185FCDC9A6F /* Pods_FastAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0140ADD28034741001276E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96ABE4B5523AEEDCD301D0BE /* Pods_FastApp_FastAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1615226D0E4292A2C6AE94AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D02625811523804797F4AEB0 /* Pods-FastApp.debug.xcconfig */,
+				C7FE9041D807E29E06E57BA8 /* Pods-FastApp.release.xcconfig */,
+				3423464EC9F97BBCAE8F0ED4 /* Pods-FastApp-FastAppUITests.debug.xcconfig */,
+				53D7E14865A9C976F3569581 /* Pods-FastApp-FastAppUITests.release.xcconfig */,
+				B2BB34FF02BEF74088561B22 /* Pods-FastAppTests.debug.xcconfig */,
+				0A6707F51581CCC58439E89E /* Pods-FastAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4EC134DA7FDB3753C9B453E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A758E5CC4ED84EAB2BE89998 /* Pods_FastApp.framework */,
+				0C7F3BC96BEDE3A2D3ECD9C4 /* Pods_FastApp_FastAppUITests.framework */,
+				F47BE93C071F744A78C4B52E /* Pods_FastAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0140AB42803473C001276E7 = {
+			isa = PBXGroup;
+			children = (
+				F0140ABF2803473C001276E7 /* FastApp */,
+				F0140AD928034741001276E7 /* FastAppTests */,
+				F0140AE328034741001276E7 /* FastAppUITests */,
+				F0140ABE2803473C001276E7 /* Products */,
+				1615226D0E4292A2C6AE94AF /* Pods */,
+				4EC134DA7FDB3753C9B453E6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F0140ABE2803473C001276E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0140ABD2803473C001276E7 /* FastApp.app */,
+				F0140AD628034741001276E7 /* FastAppTests.xctest */,
+				F0140AE028034741001276E7 /* FastAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0140ABF2803473C001276E7 /* FastApp */ = {
+			isa = PBXGroup;
+			children = (
+				F0140AF728035622001276E7 /* Launch */,
+				F0140AF4280347AA001276E7 /* Navigation */,
+				F0140AF32803479D001276E7 /* Utility */,
+				F0140ACC28034740001276E7 /* Assets.xcassets */,
+				F0140AD128034740001276E7 /* Info.plist */,
+				F0140AC92803473C001276E7 /* FastApp.xcdatamodeld */,
+			);
+			path = FastApp;
+			sourceTree = "<group>";
+		};
+		F0140AD928034741001276E7 /* FastAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				F0140ADA28034741001276E7 /* FastAppTests.swift */,
+			);
+			path = FastAppTests;
+			sourceTree = "<group>";
+		};
+		F0140AE328034741001276E7 /* FastAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F0140AE428034741001276E7 /* FastAppUITests.swift */,
+				F0140AE628034741001276E7 /* FastAppUITestsLaunchTests.swift */,
+			);
+			path = FastAppUITests;
+			sourceTree = "<group>";
+		};
+		F0140AF32803479D001276E7 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				F0140AC02803473C001276E7 /* AppDelegate.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		F0140AF4280347AA001276E7 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				F0140AF5280347BB001276E7 /* Navigation.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		F0140AF728035622001276E7 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				F0140ACE28034740001276E7 /* LaunchScreen.storyboard */,
+				F0140AF82803562D001276E7 /* Launch.swift */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0140ABC2803473C001276E7 /* FastApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0140AEA28034741001276E7 /* Build configuration list for PBXNativeTarget "FastApp" */;
+			buildPhases = (
+				10DF94F890EB47D3C433EDCC /* [CP] Check Pods Manifest.lock */,
+				F0140AB92803473C001276E7 /* Sources */,
+				F0140ABA2803473C001276E7 /* Frameworks */,
+				F0140ABB2803473C001276E7 /* Resources */,
+				C8B5D75841577F8131ECBE52 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FastApp;
+			productName = FastApp;
+			productReference = F0140ABD2803473C001276E7 /* FastApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F0140AD528034741001276E7 /* FastAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0140AED28034741001276E7 /* Build configuration list for PBXNativeTarget "FastAppTests" */;
+			buildPhases = (
+				0EAF865B41FC07BEE344FA70 /* [CP] Check Pods Manifest.lock */,
+				F0140AD228034741001276E7 /* Sources */,
+				F0140AD328034741001276E7 /* Frameworks */,
+				F0140AD428034741001276E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0140AD828034741001276E7 /* PBXTargetDependency */,
+			);
+			name = FastAppTests;
+			productName = FastAppTests;
+			productReference = F0140AD628034741001276E7 /* FastAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F0140ADF28034741001276E7 /* FastAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0140AF028034741001276E7 /* Build configuration list for PBXNativeTarget "FastAppUITests" */;
+			buildPhases = (
+				CE86EB72A87C179099B6AD99 /* [CP] Check Pods Manifest.lock */,
+				F0140ADC28034741001276E7 /* Sources */,
+				F0140ADD28034741001276E7 /* Frameworks */,
+				F0140ADE28034741001276E7 /* Resources */,
+				B8A5DD4BD72A449248AC4CDD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0140AE228034741001276E7 /* PBXTargetDependency */,
+			);
+			name = FastAppUITests;
+			productName = FastAppUITests;
+			productReference = F0140AE028034741001276E7 /* FastAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0140AB52803473C001276E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					F0140ABC2803473C001276E7 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					F0140AD528034741001276E7 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = F0140ABC2803473C001276E7;
+					};
+					F0140ADF28034741001276E7 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = F0140ABC2803473C001276E7;
+					};
+				};
+			};
+			buildConfigurationList = F0140AB82803473C001276E7 /* Build configuration list for PBXProject "FastApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F0140AB42803473C001276E7;
+			productRefGroup = F0140ABE2803473C001276E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0140ABC2803473C001276E7 /* FastApp */,
+				F0140AD528034741001276E7 /* FastAppTests */,
+				F0140ADF28034741001276E7 /* FastAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0140ABB2803473C001276E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0140AD028034740001276E7 /* LaunchScreen.storyboard in Resources */,
+				F0140ACD28034740001276E7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0140AD428034741001276E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0140ADE28034741001276E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EAF865B41FC07BEE344FA70 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FastAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		10DF94F890EB47D3C433EDCC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FastApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8A5DD4BD72A449248AC4CDD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FastApp-FastAppUITests/Pods-FastApp-FastAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FastApp-FastAppUITests/Pods-FastApp-FastAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FastApp-FastAppUITests/Pods-FastApp-FastAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8B5D75841577F8131ECBE52 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FastApp/Pods-FastApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FastApp/Pods-FastApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FastApp/Pods-FastApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE86EB72A87C179099B6AD99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FastApp-FastAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0140AB92803473C001276E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0140AF6280347BB001276E7 /* Navigation.swift in Sources */,
+				F0140AC12803473C001276E7 /* AppDelegate.swift in Sources */,
+				F0140AF92803562D001276E7 /* Launch.swift in Sources */,
+				F0140ACB2803473C001276E7 /* FastApp.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0140AD228034741001276E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0140ADB28034741001276E7 /* FastAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0140ADC28034741001276E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0140AE728034741001276E7 /* FastAppUITestsLaunchTests.swift in Sources */,
+				F0140AE528034741001276E7 /* FastAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F0140AD828034741001276E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0140ABC2803473C001276E7 /* FastApp */;
+			targetProxy = F0140AD728034741001276E7 /* PBXContainerItemProxy */;
+		};
+		F0140AE228034741001276E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0140ABC2803473C001276E7 /* FastApp */;
+			targetProxy = F0140AE128034741001276E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F0140ACE28034740001276E7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0140ACF28034740001276E7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F0140AE828034741001276E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F0140AE928034741001276E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F0140AEB28034741001276E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D02625811523804797F4AEB0 /* Pods-FastApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H6H5489H9H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FastApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hrdijital.FastApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F0140AEC28034741001276E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7FE9041D807E29E06E57BA8 /* Pods-FastApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H6H5489H9H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FastApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hrdijital.FastApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F0140AEE28034741001276E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2BB34FF02BEF74088561B22 /* Pods-FastAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H6H5489H9H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hrdijital.FastAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FastApp.app/FastApp";
+			};
+			name = Debug;
+		};
+		F0140AEF28034741001276E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A6707F51581CCC58439E89E /* Pods-FastAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H6H5489H9H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hrdijital.FastAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FastApp.app/FastApp";
+			};
+			name = Release;
+		};
+		F0140AF128034741001276E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3423464EC9F97BBCAE8F0ED4 /* Pods-FastApp-FastAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H6H5489H9H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hrdijital.FastAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FastApp;
+			};
+			name = Debug;
+		};
+		F0140AF228034741001276E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53D7E14865A9C976F3569581 /* Pods-FastApp-FastAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H6H5489H9H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hrdijital.FastAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FastApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0140AB82803473C001276E7 /* Build configuration list for PBXProject "FastApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0140AE828034741001276E7 /* Debug */,
+				F0140AE928034741001276E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0140AEA28034741001276E7 /* Build configuration list for PBXNativeTarget "FastApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0140AEB28034741001276E7 /* Debug */,
+				F0140AEC28034741001276E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0140AED28034741001276E7 /* Build configuration list for PBXNativeTarget "FastAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0140AEE28034741001276E7 /* Debug */,
+				F0140AEF28034741001276E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0140AF028034741001276E7 /* Build configuration list for PBXNativeTarget "FastAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0140AF128034741001276E7 /* Debug */,
+				F0140AF228034741001276E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F0140AC92803473C001276E7 /* FastApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F0140ACA2803473C001276E7 /* FastApp.xcdatamodel */,
+			);
+			currentVersion = F0140ACA2803473C001276E7 /* FastApp.xcdatamodel */;
+			path = FastApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F0140AB52803473C001276E7 /* Project object */;
+}
